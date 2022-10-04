@@ -10,9 +10,56 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  display: block;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+.button-box {
+  position: absolute;
+  top: 55%;
+  left: 47%;
+}
+
+.start-button {
+  padding: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.stop-button {
+  margin-left: 2px;
+  padding: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.timer {
+  display: flex;
+  max-width: max-content;
+  margin-right: auto;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field:not(:first-child) {
+  margin-left: 15px;
+}
+
+.value {
+  text-align: center;
+  font-size: 38px;
+}
+
+.label {
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
 }
