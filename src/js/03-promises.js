@@ -27,6 +27,7 @@ function onFormSubmitter(event) {
   amountInteger = Number.parseInt(amount.value);
 
   filterPromises();
+  event.currentTarget.reset();
 }
 
 function createPromise(position, delayInteger) {
