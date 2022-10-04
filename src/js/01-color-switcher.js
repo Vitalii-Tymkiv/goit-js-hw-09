@@ -23,6 +23,7 @@ function bodyBcgColorStarter() {
 }
 function bodyBcgColorStopper() {
   clearInterval(timerId);
+  git;
   refs.startBtn.disabled = true;
   refs.stopBtn.disabled = true;
   refs.startBtn.disabled = false;
