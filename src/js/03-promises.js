@@ -1,12 +1,5 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
-const notifyOptions = {
-  position: 'right-top',
-  backOverlay: true,
-  clickToClose: true,
-  closeButton: true,
-};
-
 const formRef = document.querySelector('.form');
 formRef.addEventListener('submit', onFormSubmitter);
 
@@ -14,10 +7,15 @@ let delayInteger;
 let stepInteger;
 let amountInteger;
 
+const notifyOptions = {
+  position: 'right-top',
+  backOverlay: true,
+  clickToClose: false,
+  closeButton: false,
+};
+
 function onFormSubmitter(event) {
   event.preventDefault();
-  console.log(event.currentTarget);
-
   const {
     elements: { delay, step, amount },
   } = event.currentTarget;
